@@ -11,4 +11,4 @@ async def on_ready():
     await bot.change_presence(status=discord.Status.idle, activity=activity)
     print("I am online")
 
-client.run()
+client.run(token)
