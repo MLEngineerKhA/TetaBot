@@ -7,7 +7,8 @@ token = os.getenv("DISCORD_BOT_TOKEN")
 
 
 async def on_ready():
-    await bot.change_presence(activity=discord.Game(name="a game"))
+    activity = discord.Game(name="Netflix", type=3)
+    await bot.change_presence(status=discord.Status.idle, activity=activity)
     print("I am online")
 
 client.run(token)
