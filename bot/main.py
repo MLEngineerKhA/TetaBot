@@ -7,7 +7,7 @@ token = os.getenv("DISCORD_BOT_TOKEN")
 
 
 async def on_ready():
-    await client.change_presence(activity=discord.Streaming(name='Sea of Thieves', url='https://www.twitch.tv/your_channel_here'))
+    await bot.change_presence(status=discord.Status.online, activity=discord.Game("Текст игры"))
     print("I am online")
 
 client.run(token)
